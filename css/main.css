@@ -21,6 +21,7 @@ body {
     --color5: #E4E4E4;
     --color6: #BDBDBD;
     --color7: #FAFAFA;
+    --color8: #F6F6F6;
 }
 
 /* buttons font */
@@ -314,7 +315,7 @@ li a:hover {
 
 /* ------------------- */
 
-/* hide desktop hiding */
+/* hide desktop footer */
 .desktop-footer {
     display: none;
 }
@@ -329,3 +330,64 @@ li a:hover {
 /* DESKTOP STYLES */
 
 /* -------------- */
+
+@media screen and (min-width:600px) {
+    /* change background colour */
+    .content {
+        background-color: var(--color2);
+    }
+
+    /* add background image */
+    .background {
+        background-image: url(../images/background.png);
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 10em;
+        height: auto;
+    }
+    
+    /* food app fonts resizing for desktop, and spacing */
+    h1 {
+        font-size: 24px;
+        color: var(--color8);
+    }
+
+    .foodapp h2 {
+        font-size: 58px;
+        color: var(--color2);
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    .foodapp h4 {
+        color: var(--color8);
+        font-size: 24px;
+    }
+
+    /* redesign buttons */
+    .playstore, .appstore {
+        background-color: transparent;
+        border-color: var(--color2);
+        color: var(--color2);
+        width: 236px;
+        height: 68px;
+    }
+
+    /* button hover effect */
+    .playstore:hover, .appstore:hover {
+        border: none;
+    }
+
+    /* reformat placement of buttons*/
+    .playstore, .appstore {
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    .appimages {
+        transform: translateY(-200px);
+        padding-bottom: 0;
+    }
+
+/* end of media query */
+}
