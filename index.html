@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -19,26 +18,31 @@
     <div class="container">
         <header class="main-head">
 
-            <!-- navigation -->
-            <nav>
-                <ul class="main-nav" id="main-nav">
-                    <li class='logo'><a href='#home'><img src='./images/logo.png' /></a></li>
-                    <input type='checkbox' id='check' />
-                    <span class="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#product">Product</a></li>
-                        <li><a href="#faq">Faq</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-                </ul>
+            <!-- navigation items -->
+            <nav class="main-nav">
+                <div class="navdiv">
+
+                    <!-- nav logo -->
+                    <div class="logo-container">
+                        <img src='images/logo.png' alt="logo" class="logo"/>
+                    </div>
+
+                    <!-- word items nav -->
+                    <ul>
+                        <li class="not-burger"><a href="#home">Home</a></li>
+                        <li class="not-burger"><a href="#product">Product</a></li>
+                        <li class="not-burger"><a href="#faq">Faq</a></li>
+                        <li class="not-burger"><a href="#contact">Contact</a></li>
+                        <li class="burger"><a href="#burger">&#9776;</a></li>
+                    </ul>
+
+                </div>
+                
             </nav>
 
         </header>
 
         <!-- start of main content -->
-        <!-- test -->
 
         <main class="content">
             <!-- app section -->
