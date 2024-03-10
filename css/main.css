@@ -13,6 +13,7 @@ body {
     --color4: #FA4A0C;
     --color5: #E4E4E4;
     --color6: #BDBDBD;
+    --color7: #FAFAFA;
 }
 
 /* buttons font */
@@ -62,10 +63,17 @@ h1, h2, h3, h4, h5, p {
 
 /* ------------------- */
 
+.foodapp {
+    padding-top: 2em;
+}
+
+.content {
+    background-color: var(--color7);
+}
+
 /* add spacing in body */
 body {
     line-height: 1.4;
-   
 }
 
 /* button styling */
@@ -176,9 +184,8 @@ li{
 }
 
 li a{
-    margin-right: 2em;
     color: var(--colorH2);
-    margin-right: 2em;
+    margin-right: 1em;
     transition: color 0.3s;
     font-weight: 600;
 }
