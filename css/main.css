@@ -1,14 +1,8 @@
 /* -------------- */
 
-/* MAIN WEBSITE STYLES */
+/* MOBILE WEBSITE STYLES */
 
 /* -------------- */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
 
 /* colour variables */
 body {
@@ -18,8 +12,10 @@ body {
     --colorH2: #252B42;
     --color4: #FA4A0C;
     --color5: #E4E4E4;
+    --color6: #BDBDBD;
 }
 
+/* buttons font */
 button {
     font-family: "Montserrat", sans-serif;
 }
@@ -27,6 +23,7 @@ button {
 /* text styling */
 body {
     text-align: center;
+    margin: 0 auto;
 }
 
 /* font for website */
@@ -72,18 +69,8 @@ body {
 }
 
 /* button styling */
-.playstore {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--color2);
-    background-color: var(--color4);
-    border-style: unset;
-    border-radius: 30px;
-    width: 236px;
-    height: 68px;
-}
 
-.appstore {
+.appstore, .playstore {
     font-size: 24px;
     font-weight: bold;
     color: var(--color4);
@@ -101,6 +88,14 @@ body {
     display: block;
     width: 200px;
     margin: 0.8em auto;
+}
+
+.playstore:hover,
+.appstore:hover {
+    color: var(--color2);
+    background-color: var(--color4);
+    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
 /* first couple of images styling */
@@ -182,6 +177,10 @@ li{
 
 li a{
     margin-right: 2em;
+    color: var(--colorH2);
+    margin-right: 2em;
+    transition: color 0.3s;
+    font-weight: 600;
 }
 
 .burger{
@@ -189,8 +188,12 @@ li a{
 }
 
 
+li a:hover {
+    color: var(--color4);
+}
 
-@media(max-width: 610px) {
+
+@media(max-width: 600px) {
     .burger{
         display: block;
     }
@@ -198,3 +201,98 @@ li a{
         display: none;
     }
 }
+
+/* --------------------------- */
+
+/* DOWNLOAD THE APP NOW SECTION*/
+
+/* ----------------------------- */
+
+/* hiding the website download section */
+.desktop-download {
+    display: none;
+}
+
+/* download the app now section */
+.mobile-download {
+    background-color: var(--colorH2);
+    padding-top: 6em;
+    padding-bottom: 6em;
+    margin-top: 4em;
+}
+
+/* change font color */
+.mobile-download h2 {
+    color: var(--color2);
+}
+
+.mobile-download h4 {
+    color: var(--color6);
+}
+
+/* styling buttons for buynow and tryfree */
+.buynow {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color2);
+    background-color: transparent;
+    border-color: var(--color2);
+    border-radius: 10px;
+    width: 125px;
+    height: 64px;
+    border-style: solid;
+    margin-right: 10px;
+}
+
+.tryfree {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color2);
+    background-color: transparent;
+    border-color: var(--color2);
+    border-radius: 10px;
+    width: 170px;
+    height: 64px;
+    border-style: solid;
+}
+
+/* display buttons side by side */
+.buynow,.tryfree {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* button hover effect */
+.buynow:hover,.tryfree:hover {
+    border: none;
+    background-color: var(--color4);
+    transition: border 0.3s;
+    transition: background-color 0.3s;
+}
+
+/* add spacing from the left and right for all cards */
+.card {
+    margin: 1em;
+}
+
+/* ------------------- */
+
+/* footer section */
+
+/* ------------------- */
+
+/* hide desktop hiding */
+.desktop-footer {
+    display: none;
+}
+
+/* mobile footer styling */
+.mobile-footer {
+    padding: 2.5em;
+}
+
+/* -------------- */
+
+/* DESKTOP STYLES */
+
+/* -------------- */
