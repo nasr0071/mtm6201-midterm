@@ -4,6 +4,13 @@
 
 /* -------------- */
 
+
+/* -------------- */
+
+/* MAIN STYLES */
+
+/* -------------- */
+
 /* colour variables */
 body {
     --color1: #000000;
@@ -21,7 +28,7 @@ button {
     font-family: "Montserrat", sans-serif;
 }
 
-/* text styling */
+/* text styling for body*/
 body {
     text-align: center;
     margin: 0 auto;
@@ -34,7 +41,7 @@ html {
     box-sizing: border-box;
 }
 
-/* font styling (sizing and colour) */
+/* font styling for the h and p (sizing and colour) */
 h1 {
     font-size: 16px;
     font-weight: bold;
@@ -63,21 +70,22 @@ h1, h2, h3, h4, h5, p {
 
 /* ------------------- */
 
+/* space on top of card */
 .foodapp {
     padding-top: 2em;
 }
 
+/* background colour to content */
 .content {
     background-color: var(--color7);
 }
 
-/* add spacing in body */
+/* add spacing in body lines */
 body {
     line-height: 1.4;
 }
 
 /* button styling */
-
 .appstore, .playstore {
     font-size: 24px;
     font-weight: bold;
@@ -98,6 +106,7 @@ body {
     margin: 0.8em auto;
 }
 
+/* change colour on hover */
 .playstore:hover,
 .appstore:hover {
     color: var(--color2);
@@ -113,18 +122,20 @@ body {
     padding: 3em;
 }
 
+/* first phone styling to be on top of left image and slightly higher */
 .phoneone {
     margin-right: -20px;
     z-index: 1;
     margin-bottom: 50px;
 }
 
+/* second phone styling to be lower while keeping same image size */
 .phonetwo {
     top: 50px;
     margin-top: 50px;
 }
 
-/* how the app works */
+/* how the app works styling */
 .app-works p {
     font-size: 24px;
     font-weight: 600;
@@ -132,24 +143,38 @@ body {
     padding-bottom: 2em;
 }
 
+/* horizontal line styling */
 .app-works hr {
     border-color: var(--color5);
     border-width: 1.5px;
     border-style: solid;
 }
 
-/* cards styling */
+/* -------------- */
+
+/* CARDS STYLING */
+
+/* -------------- */
+
+/* spacing and colour for h3 */
 .card h3 {
     color: var(--color4);
     padding: 2em;
 }
 
+/* spacing for h4 */
 .card h4 {
     margin-top: 2em;
 }
 
+/* center images */
 .card img {
     justify-content: center;
+}
+
+/* add spacing from the left and right for all cards */
+.card {
+    margin: 1em;
 }
 
 /* -------------- */
@@ -163,26 +188,31 @@ body {
     text-decoration: none;
 }
 
+/* resize logo */
 .logo img{
     height: 51px;
 }
 
+/* add padding to whole nav */
 .main-nav{
     padding-right: 15px;
     padding-left: 15px;
 }
 
+/* display flex to nav container items and center */
 .navdiv{
     display: flex; 
     align-items: center; 
     justify-content: space-between;
 }
 
+/* removing styling to li and place inline */
 li{
     list-style: none; 
     display: inline-block;
 }
 
+/* styling for words in nav*/
 li a{
     color: var(--colorH2);
     margin-right: 1em;
@@ -190,16 +220,17 @@ li a{
     font-weight: 600;
 }
 
+/* remove icon for hamburger menu */
 .burger{
     display: none;
 }
 
-
+/* hover styling for nav items */
 li a:hover {
     color: var(--color4);
 }
 
-
+/* display hamburger icon for mobile layout */
 @media(max-width: 600px) {
     .burger{
         display: block;
@@ -275,11 +306,6 @@ li a:hover {
     background-color: var(--color4);
     transition: border 0.3s;
     transition: background-color 0.3s;
-}
-
-/* add spacing from the left and right for all cards */
-.card {
-    margin: 1em;
 }
 
 /* ------------------- */
