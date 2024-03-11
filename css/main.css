@@ -4,7 +4,6 @@
 
 /* -------------- */
 
-
 /* -------------- */
 
 /* MAIN STYLES */
@@ -270,7 +269,7 @@ li a:hover {
 }
 
 /* styling buttons for buynow and tryfree */
-.buynow {
+.buynow{
     font-size: 16px;
     font-weight: bold;
     color: var(--color2);
@@ -457,6 +456,71 @@ li a:hover {
     .shoppingwords h3 {
         padding-left: 0;
     }
+
+    .mobile-download {
+        display: none;
+    }
+
+    .desktop-download{
+        display: block;
+    }
+
+    .desktop-download h2, h4 {
+        color: var(--color2);
+    }
+
+    .background-footer {
+        background-image: url(../images/background-two.png);
+        background-position: center;
+        background-size: cover;
+        padding: 10em;
+        margin-top: 8em;
+        height: auto;
+    }
+
+    .playstore-download {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color2);
+        background-color: transparent;
+        border-color: var(--color2);
+        border-radius: 10px;
+        width: 125px;
+        height: 64px;
+        border-style: solid;
+        margin-right: 10px;
+        margin-top: 1em;
+    }
+
+    .appstore-download{
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color2);
+        background-color: transparent;
+        border-color: var(--color2);
+        border-radius: 10px;
+        width: 170px;
+        height: 64px;
+        border-style: solid;
+        margin-top: 1em;
+    }
+
+    .playstore-download:hover,.appstore-download:hover {
+        border: none;
+        background-color: var(--color4);
+        transition: border 0.3s;
+        transition: background-color 0.3s;
+    }
+
+    .mobile-footer {
+        display: none;
+    }
+
+    .desktop-footer {
+        display: block;
+    }
+
+    
 
 /* end of media query */
 }
