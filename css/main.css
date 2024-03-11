@@ -520,20 +520,6 @@ li a:hover {
         display: block;
     }
 
-    /* .desktop-footer {
-        display: flex;
-        align-items: center; 
-        justify-content: space-between; 
-        padding: 3em;
-        margin-right: 4em;
-        margin-left: 4em;
-
-    }
-    
-    .desktop-footer img {
-        margin-right: 1em;
-    } */
-
     .desktop-footer {
         display: flex;
         justify-content: space-between;
