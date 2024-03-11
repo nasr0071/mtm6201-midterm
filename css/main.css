@@ -37,7 +37,6 @@ body {
 /* font for website */
 html {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     box-sizing: border-box;
 }
 
@@ -324,6 +323,71 @@ li a:hover {
     padding: 2.5em;
 }
 
+/* ------------------- */
+
+/* contact page */
+
+/* ------------------- */
+
+.contact-title {
+    background-color: var(--color7);
+    padding: 6em;
+    margin-bottom: 3em;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-input input[type="text"],
+.form-input input[type="email"],
+.form-input textarea {
+    width: 80%; 
+    box-sizing: border-box; 
+    padding: 10px;
+    border-color: var(--color4); 
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Adjust the spacing between form elements */
+.form-input label {
+    margin-bottom: 1em;
+}
+
+/* button styling */
+.form-input input[type="submit"]{
+    font-size: 20px;
+    color: var(--color4);
+    background-color: transparent;
+    border-color: var(--color4);
+    border-radius: 10px;
+    border-style: solid;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-input input[type="submit"]:hover {
+    color: var(--color2);
+    background-color: var(--color4);
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.contact-title h3{
+    color: var(--color3);
+    padding-bottom: 2em;
+}
+
+/* styling the horizontal line */
+.contact-title hr{
+    border-color: var(--color3);
+    border-width: 1.5px;
+    border-style: solid;
+}
+
 /* -------------- */
 
 /* DESKTOP STYLES */
@@ -544,9 +608,14 @@ li a:hover {
     }
     
     .desktop-footer p {
-        margin-left: auto;
+       margin: 0 auto;
     }
 
+    .form-input input[type="text"],
+    .form-input input[type="email"],
+    .form-input textarea {
+        width: 50%; 
+}
 
 /* end of media query */
 }

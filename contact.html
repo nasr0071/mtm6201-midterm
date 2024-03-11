@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link  rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -23,7 +25,7 @@
 
             <!-- word items nav -->
             <ul>
-                <li class="not-burger"><a href="#home">Home</a></li>
+                <li class="not-burger"><a href="index.html">Home</a></li>
                 <li class="not-burger"><a href="#product">Product</a></li>
                 <li class="not-burger"><a href="#faq">Faq</a></li>
                 <li class="not-burger"><a href="contact.html">Contact</a></li>
@@ -32,7 +34,57 @@
 
         </header>
 
-    </div>
+        
+            <div class="contact-title">
+                <h2>Contact Us</h2>
+                <h3>Please leave us a message!</h3>
+                <hr>
+            </div>
+
+            <div class="contact-form">
+            <form action="/submit_form" method="POST" class="form-input">
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname"><br><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+
+            <footer class="footer">
+                <!-- mobile footer -->
+                <div class="mobile-footer" id="mobile-footer">
+                    <img src="images/twitter.png" alt="twitter" class="twitter">
+                    <img src="images/facebook.png" alt="facebook" class="facebook">
+                    <img src="images/linkedin.png" alt="linkedin" class="linkedin">
+                    <p>Just type what's on your mind and we'll</p>
+                </div>
     
+                <!-- desktop footer -->
+                
+                <div class="desktop-footer" id="desktop-footer">
+                    <img src="images/logo.png" alt="logofooter" class="logofooter">
+                    
+                    <div class="socials">
+                    <img src="images/twitter.png" alt="twitter" class="twitter">
+                    <img src="images/facebook.png" alt="facebook" class="facebook">
+                    <img src="images/instragram.png" alt="instragram" class="instagram">
+                    </div>
+                    
+                    <p>Copywright 2020 Bella Onojie.com</p>
+                </div>
+            
+    
+            </footer>
+
+
+    </div>
+
 </body>
+
 </html>
