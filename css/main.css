@@ -422,27 +422,6 @@ li a:hover {
     transition-duration: 0.1s;
 }
 
-/* card phone animations */
-@keyframes hovering {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.phone-three,
-.phone-four,
-.phone-five {
-    animation: hovering 3s infinite;
-}
-
 /* product page */
 
 /* card styling */
@@ -724,6 +703,27 @@ li a:hover {
 
     .product-card {
         margin: 1em;
+    }
+
+    /* card phone animations */
+    @keyframes hovering {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .phone-three,
+    .phone-four,
+    .phone-five {
+        animation: hovering 3s infinite;
     }
 
     /* end of media query */
