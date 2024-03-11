@@ -384,9 +384,78 @@ li a:hover {
         margin-right: 1em;
     }
 
+    /* translate first couple of images up */
     .appimages {
         transform: translateY(-200px);
         padding-bottom: 0;
+    }
+
+    /* move horizontal line about "how the app works" */
+    .app-works {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* reformat horizontal line */
+    .app-works hr {
+        order: -1;
+        width: 884px;
+    }
+
+    /* redesign "how the app works" */
+    .app-works p {
+        font-size: 44px;
+        padding-top: 1em;
+    }
+
+    /* formatting cards */
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    /* flex */
+    .card {
+        display: flex;
+        margin: 1em;
+        flex-direction: row;
+    }
+
+    .accountwords, .checkoutwords {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .accountphone, .checkoutphone {
+        order: -1;
+        width: 50%;
+    }
+
+    .accountwords h3, .checkoutwords h3 {
+        padding-left: 0;
+    }
+
+    /* explore */
+    .shoppingwords {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .shoppingphone {
+        width: 50%;
+    }
+
+    .shoppingwords h3 {
+        padding-left: 0;
     }
 
 /* end of media query */
