@@ -59,7 +59,12 @@ h4 {
     color: var(--color3)
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 0.2em 0 0.5em;
 }
 
@@ -85,7 +90,8 @@ body {
 }
 
 /* button styling */
-.appstore, .playstore {
+.appstore,
+.playstore {
     font-size: 24px;
     font-weight: bold;
     color: var(--color4);
@@ -183,36 +189,36 @@ body {
 /* -------------- */
 
 /* remove text decoration for items */
-*{
+* {
     text-decoration: none;
 }
 
 /* resize logo */
-.logo img{
+.logo img {
     height: 51px;
 }
 
 /* add padding to whole nav */
-.main-nav{
+.main-nav {
     padding-right: 15px;
     padding-left: 15px;
 }
 
 /* display flex to nav container items and center */
-.navdiv{
-    display: flex; 
-    align-items: center; 
+.navdiv {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 /* removing styling to li and place inline */
-li{
-    list-style: none; 
+li {
+    list-style: none;
     display: inline-block;
 }
 
 /* styling for words in nav*/
-li a{
+li a {
     color: var(--colorH2);
     margin-right: 1em;
     transition: color 0.3s;
@@ -220,7 +226,7 @@ li a{
 }
 
 /* remove icon for hamburger menu */
-.burger{
+.burger {
     display: none;
 }
 
@@ -231,9 +237,10 @@ li a:hover {
 
 /* display hamburger icon for mobile layout */
 @media(max-width: 600px) {
-    .burger{
+    .burger {
         display: block;
     }
+
     .not-burger {
         display: none;
     }
@@ -268,7 +275,7 @@ li a:hover {
 }
 
 /* styling buttons for buynow and tryfree */
-.buynow{
+.buynow {
     font-size: 16px;
     font-weight: bold;
     color: var(--color2);
@@ -294,13 +301,15 @@ li a:hover {
 }
 
 /* display buttons side by side */
-.buynow,.tryfree {
+.buynow,
+.tryfree {
     display: inline-block;
     vertical-align: top;
 }
 
 /* button hover effect */
-.buynow:hover,.tryfree:hover {
+.buynow:hover,
+.tryfree:hover {
     border: none;
     background-color: var(--color4);
     transition: border 0.3s;
@@ -345,10 +354,10 @@ li a:hover {
 .form-input input[type="text"],
 .form-input input[type="email"],
 .form-input textarea {
-    width: 80%; 
-    box-sizing: border-box; 
+    width: 80%;
+    box-sizing: border-box;
     padding: 10px;
-    border-color: var(--color4); 
+    border-color: var(--color4);
     border-style: solid;
     border-width: 2px;
 }
@@ -359,7 +368,7 @@ li a:hover {
 }
 
 /* button styling */
-.form-input input[type="submit"]{
+.form-input input[type="submit"] {
     font-size: 20px;
     color: var(--color4);
     background-color: transparent;
@@ -376,16 +385,99 @@ li a:hover {
     transition: background-color 0.3s;
 }
 
-.contact-title h3{
+.contact-title h3 {
     color: var(--color3);
     padding-bottom: 2em;
 }
 
 /* styling the horizontal line */
-.contact-title hr{
+.contact-title hr {
     border-color: var(--color5);
     border-width: 1.5px;
     border-style: solid;
+}
+
+/* button animation styling */
+
+/* button hover effect to get bigger */
+.appstore:hover,
+.playstore:hover,
+.buynow:hover,
+.tryfree:hover,
+.playstore-download:hover,
+.appstore-download:hover,
+.read-more:hover {
+    transform: scale(1.1);
+}
+
+/* active effevt to scale down*/
+.appstore:active,
+.playstore:active,
+.buynow:active,
+.tryfree:active,
+.playstore-download:active,
+.appstore-download:active,
+.read-more:active {
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+}
+
+/* card phone animations */
+@keyframes hovering {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.phone-three,
+.phone-four,
+.phone-five {
+    animation: hovering 3s infinite;
+}
+
+/* product page */
+
+/* card styling */
+.product-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.product-card {
+    width: 60%;
+    background-color: var(--color7);
+    border-radius: 10px;
+    border: 1px solid var(--color4);
+    padding: 20px;
+}
+
+.product-card h2 {
+    font-size: 24px;
+}
+
+.read-more {
+    background-color: var(--color4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: var(--colorH2);
 }
 
 /* -------------- */
@@ -395,6 +487,7 @@ li a:hover {
 /* -------------- */
 
 @media screen and (min-width:600px) {
+
     /* change background colour */
     .content {
         background-color: var(--color2);
@@ -408,7 +501,7 @@ li a:hover {
         padding-bottom: 10em;
         height: auto;
     }
-    
+
     /* food app fonts resizing for desktop, and spacing */
     h1 {
         font-size: 24px;
@@ -428,7 +521,8 @@ li a:hover {
     }
 
     /* redesign buttons */
-    .playstore, .appstore {
+    .playstore,
+    .appstore {
         background-color: transparent;
         border-color: var(--color2);
         color: var(--color2);
@@ -437,12 +531,14 @@ li a:hover {
     }
 
     /* button hover effect */
-    .playstore:hover, .appstore:hover {
+    .playstore:hover,
+    .appstore:hover {
         border: none;
     }
 
     /* reformat placement of buttons*/
-    .playstore, .appstore {
+    .playstore,
+    .appstore {
         display: inline-block;
         margin-right: 1em;
     }
@@ -479,7 +575,7 @@ li a:hover {
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     /* flex */
     .card {
         display: flex;
@@ -487,7 +583,8 @@ li a:hover {
         flex-direction: row;
     }
 
-    .accountwords, .checkoutwords {
+    .accountwords,
+    .checkoutwords {
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -495,12 +592,14 @@ li a:hover {
         width: 50%;
     }
 
-    .accountphone, .checkoutphone {
+    .accountphone,
+    .checkoutphone {
         order: -1;
         width: 50%;
     }
 
-    .accountwords h3, .checkoutwords h3 {
+    .accountwords h3,
+    .checkoutwords h3 {
         padding-left: 0;
     }
 
@@ -525,11 +624,12 @@ li a:hover {
         display: none;
     }
 
-    .desktop-download{
+    .desktop-download {
         display: block;
     }
 
-    .desktop-download h2, h4 {
+    .desktop-download h2,
+    h4 {
         color: var(--color2);
     }
 
@@ -556,7 +656,7 @@ li a:hover {
         margin-top: 1em;
     }
 
-    .appstore-download{
+    .appstore-download {
         font-size: 16px;
         font-weight: bold;
         color: var(--color2);
@@ -569,7 +669,8 @@ li a:hover {
         margin-top: 1em;
     }
 
-    .playstore-download:hover,.appstore-download:hover {
+    .playstore-download:hover,
+    .appstore-download:hover {
         border: none;
         background-color: var(--color4);
         transition: border 0.3s;
@@ -581,13 +682,15 @@ li a:hover {
     }
 
     /* desktop footer styling */
+
     .desktop-footer {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 2em;
+
     }
-    
+
     .desktop-footer p {
         font-size: 12px;
     }
@@ -595,8 +698,21 @@ li a:hover {
     .form-input input[type="text"],
     .form-input input[type="email"],
     .form-input textarea {
-        width: 50%; 
-}
+        width: 50%;
+    }
 
-/* end of media query */
+    /* products page */
+    .product-cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3em;
+    }
+
+    .product-card {
+        margin: 1em;
+    }
+
+    /* end of media query */
 }
