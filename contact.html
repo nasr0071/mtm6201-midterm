@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,76 +18,93 @@
 <body>
 
     <div class="container">
+        <!-- Header Section -->
         <header class="navdiv">
+            <!-- Navigation -->
             <!-- nav logo -->
             <div class="logo-container">
+                <!-- Anchor tag to link to the homepage -->
                 <a href="index.html">
                 <img src='images/logo.png' alt="logo" class="logo"/>
                 </a>
             </div>
 
-            <!-- word items nav -->
+            <!-- List of navigation items -->
             <ul>
+                <!-- List items for navigation links -->
                 <li class="not-burger"><a href="index.html">Home</a></li>
                 <li class="not-burger"><a href="product.html">Product</a></li>
                 <li class="not-burger"><a href="#faq">Faq</a></li>
                 <li class="not-burger"><a href="contact.html">Contact</a></li>
                 <li class="burger"><a href="#burger">&#9776;</a></li>
             </ul>
-
         </header>
 
-        
+        <!-- Main Section -->
+        <div class="main">
+            <!-- Contact Title Section -->
             <div class="contact-title">
+                <!-- Title -->
                 <h2>Contact Us</h2>
+                <!-- Subtitle -->
                 <h3>Please leave us a message!</h3>
+                <!-- Horizontal line -->
                 <hr>
             </div>
 
+            <!-- Contact Form Section -->
             <div class="contact-form">
-            <form action="/submit_form" method="POST" class="form-input">
-                <label for="fullname">Full Name</label><br>
-                <input type="text" id="fullname" name="fullname"><br><br>
-                
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-                
-                <input type="submit" value="Submit">
-            </form>
+                <!-- Form for submitting contact information -->
+                <form action="/submit_form" method="POST" class="form-input">
+                    <!-- Full Name Input -->
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname"><br><br>
+                    
+                    <!-- Email Input -->
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                    <!-- Message Input -->
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <!-- Mobile Footer -->
+            <div class="mobile-footer" id="mobile-footer">
+                <!-- Social Media Icons -->
+                <img src="images/twitter.png" alt="twitter" class="twitter">
+                <img src="images/facebook.png" alt="facebook" class="facebook">
+                <img src="images/linkedin.png" alt="linkedin" class="linkedin">
+                <!-- Additional Text -->
+                <p>Just type what's on your mind and we'll</p>
             </div>
 
-            <footer class="footer">
-                <!-- mobile footer -->
-                <div class="mobile-footer" id="mobile-footer">
-                    <img src="images/twitter.png" alt="twitter" class="twitter">
-                    <img src="images/facebook.png" alt="facebook" class="facebook">
-                    <img src="images/linkedin.png" alt="linkedin" class="linkedin">
-                    <p>Just type what's on your mind and we'll</p>
-                </div>
-    
-                <!-- desktop footer -->
+            <!-- Desktop Footer -->
+            <div class="desktop-footer" id="desktop-footer">
+                <!-- Footer Logo -->
+                <img src="images/logo.png" alt="logofooter" class="logofooter">
                 
-                <div class="desktop-footer" id="desktop-footer">
-                    <img src="images/logo.png" alt="logofooter" class="logofooter">
-                    
-                    <div class="socials">
+                <!-- Social Media Icons -->
+                <div class="socials">
                     <img src="images/twitter.png" alt="twitter" class="twitter">
                     <img src="images/facebook.png" alt="facebook" class="facebook">
                     <img src="images/instragram.png" alt="instragram" class="instagram">
-                    </div>
-                    
-                    <p>Copywright 2020 Bella Onojie.com</p>
                 </div>
-            
-    
-            </footer>
-
-
+                
+                <!-- Copywright Information -->
+                <p>Copywright 2020 Bella Onojie.com</p>
+            </div>
+        </footer>
     </div>
 
 </body>
 
 </html>
+```
