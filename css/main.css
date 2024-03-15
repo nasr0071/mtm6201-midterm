@@ -124,7 +124,7 @@ body {
 .appimages {
     display: flex;
     justify-content: center;
-    padding: 3em;
+    padding-top: 3em;
 }
 
 /* first phone styling to be on top of left image and slightly higher */
@@ -132,12 +132,18 @@ body {
     margin-right: -20px;
     z-index: 1;
     margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 /* second phone styling to be lower while keeping same image size */
 .phonetwo {
     top: 50px;
     margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 /* how the app works styling */
@@ -338,68 +344,73 @@ li a:hover {
 
 /* ------------------- */
 
+/* contact section styling */
+
+/* background color and spacing */
 .contact-title {
-    background-color: var(--color7);
+    background-color: var(--color7); 
     padding: 6em;
-    margin-bottom: 3em;
+    margin-bottom: 3em; 
 }
 
+/* form input styling */
 .form-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
-
+/* input, textarea styling */
 .form-input input[type="text"],
 .form-input input[type="email"],
 .form-input textarea {
-    width: 80%;
-    box-sizing: border-box;
-    padding: 10px;
-    border-color: var(--color4);
-    border-style: solid;
-    border-width: 1px;
+    width: 80%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    border-color: var(--color4); 
+    border-style: solid; 
+    border-width: 1px; 
 }
 
-/* Adjust the spacing between form elements */
+/* Adjust spacing for labels */
 .form-input label {
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
 }
 
-/* button styling */
+/* submit button styling */
 .form-input input[type="submit"] {
-    font-size: 20px;
+    font-size: 20px; 
     color: var(--color4);
     background-color: transparent;
-    border-color: var(--color4);
-    border-radius: 10px;
-    border-style: solid;
-    font-family: "Montserrat", sans-serif;
+    border-color: var(--color4); 
+    border-radius: 10px; 
+    border-style: solid; 
+    font-family: "Montserrat", sans-serif; 
 }
 
+/* hover effect for submit button */
 .form-input input[type="submit"]:hover {
-    color: var(--color2);
-    background-color: var(--color4);
-    transition: color 0.3s;
-    transition: background-color 0.3s;
+    color: var(--color2); 
+    background-color: var(--color4); 
+    transition: color 0.3s, background-color 0.3s; 
 }
 
+/* styling for contact title */
 .contact-title h3 {
-    color: var(--color3);
-    padding-bottom: 2em;
+    color: var(--color3); 
+    padding-bottom: 2em; 
 }
 
-/* styling the horizontal line */
+/* styling for horizontal line */
 .contact-title hr {
     border-color: var(--color5);
-    border-width: 1.5px;
-    border-style: solid;
+    border-width: 1.5px; 
+    border-style: solid; 
 }
 
 /* button animation styling */
 
-/* button hover effect to get bigger */
+/* hover effect to scale button */
 .appstore:hover,
 .playstore:hover,
 .buynow:hover,
@@ -407,10 +418,10 @@ li a:hover {
 .playstore-download:hover,
 .appstore-download:hover,
 .read-more:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
-/* active effevt to scale down*/
+/* active effect to scale down button */
 .appstore:active,
 .playstore:active,
 .buynow:active,
@@ -418,46 +429,51 @@ li a:hover {
 .playstore-download:active,
 .appstore-download:active,
 .read-more:active {
-    transform: scale(0.9);
-    transition-duration: 0.1s;
+    transform: scale(0.9); 
+    transition-duration: 0.1s; 
 }
 
-/* product page */
+/* product page styling */
 
-/* card styling */
+/* card container styling */
 .product-cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 2em;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    row-gap: 2em; 
 }
 
+/* product card styling */
 .product-card {
-    width: 60%;
-    background-color: var(--color7);
-    border-radius: 10px;
+    width: 60%; 
+    background-color: var(--color7); 
+    border-radius: 10px; 
     border: 1px solid var(--color4);
-    padding: 20px;
+    padding: 20px; 
 }
 
+/* styling for product card heading */
 .product-card h2 {
-    font-size: 24px;
+    font-size: 24px; 
 }
 
+/* styling for "Read More" link */
 .read-more {
-    background-color: var(--color4);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s;
+    background-color: var(--color4); 
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s; 
 }
 
+/* hover effect for "Read More" link */
 .read-more:hover {
-    background-color: var(--colorH2);
+    background-color: var(--colorH2); 
 }
+
 
 /* -------------- */
 
