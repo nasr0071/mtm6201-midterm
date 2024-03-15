@@ -348,64 +348,64 @@ li a:hover {
 
 /* background color and spacing */
 .contact-title {
-    background-color: var(--color7); 
+    background-color: var(--color7);
     padding: 6em;
-    margin-bottom: 3em; 
+    margin-bottom: 3em;
 }
 
 /* form input styling */
 .form-input {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* input, textarea styling */
 .form-input input[type="text"],
 .form-input input[type="email"],
 .form-input textarea {
-    width: 80%; 
-    box-sizing: border-box; 
-    padding: 10px; 
-    border-color: var(--color4); 
-    border-style: solid; 
-    border-width: 1px; 
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-color: var(--color4);
+    border-style: solid;
+    border-width: 1px;
 }
 
 /* Adjust spacing for labels */
 .form-input label {
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
 }
 
 /* submit button styling */
 .form-input input[type="submit"] {
-    font-size: 20px; 
+    font-size: 20px;
     color: var(--color4);
     background-color: transparent;
-    border-color: var(--color4); 
-    border-radius: 10px; 
-    border-style: solid; 
-    font-family: "Montserrat", sans-serif; 
+    border-color: var(--color4);
+    border-radius: 10px;
+    border-style: solid;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* hover effect for submit button */
 .form-input input[type="submit"]:hover {
-    color: var(--color2); 
-    background-color: var(--color4); 
-    transition: color 0.3s, background-color 0.3s; 
+    color: var(--color2);
+    background-color: var(--color4);
+    transition: color 0.3s, background-color 0.3s;
 }
 
 /* styling for contact title */
 .contact-title h3 {
-    color: var(--color3); 
-    padding-bottom: 2em; 
+    color: var(--color3);
+    padding-bottom: 2em;
 }
 
 /* styling for horizontal line */
 .contact-title hr {
     border-color: var(--color5);
-    border-width: 1.5px; 
-    border-style: solid; 
+    border-width: 1.5px;
+    border-style: solid;
 }
 
 /* button animation styling */
@@ -418,7 +418,7 @@ li a:hover {
 .playstore-download:hover,
 .appstore-download:hover,
 .read-more:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* active effect to scale down button */
@@ -429,8 +429,8 @@ li a:hover {
 .playstore-download:active,
 .appstore-download:active,
 .read-more:active {
-    transform: scale(0.9); 
-    transition-duration: 0.1s; 
+    transform: scale(0.9);
+    transition-duration: 0.1s;
 }
 
 /* product page styling */
@@ -438,60 +438,46 @@ li a:hover {
 /* card container styling */
 .product-cards {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    row-gap: 2em; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2em;
 }
 
 /* product card styling */
 .product-card {
-    width: 60%; 
-    background-color: var(--color7); 
-    border-radius: 10px; 
+    width: 60%;
+    background-color: var(--color7);
+    border-radius: 10px;
     border: 1px solid var(--color4);
-    padding: 20px; 
+    padding: 20px;
 }
 
 /* styling for product card heading */
 .product-card h2 {
-    font-size: 24px; 
+    font-size: 24px;
 }
 
 /* styling for "Read More" link */
 .read-more {
-    background-color: var(--color4); 
-    color: #fff; 
-    padding: 10px; 
-    border-radius: 5px; 
-    text-decoration: none; 
-    display: inline-block; 
-    transition: background-color 0.3s; 
+    background-color: var(--color4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 /* hover effect for "Read More" link */
 .read-more:hover {
-    background-color: var(--colorH2); 
+    background-color: var(--colorH2);
 }
 
-/* skip links */
-.skip-links{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .skip-links a{
-    position: absolute;
-    top: -3em;
-    background-color: rgb(58, 58, 58);
-    color:white;
-    padding: .5em 1em;
-  }
-  
-  .skip-links a:focus{
-    top: 0;
-  }
+/* skip links hidden in mobile*/
+.skip-links {
+    display: none;
+}
 
 
 /* -------------- */
@@ -501,6 +487,27 @@ li a:hover {
 /* -------------- */
 
 @media screen and (min-width:600px) {
+
+    /* skip links shown in desktop */
+    .skip-links {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skip-links a {
+        position: absolute;
+        top: -3em;
+        background-color: rgb(58, 58, 58);
+        color: white;
+        padding: .5em 1em;
+    }
+
+    .skip-links a:focus {
+        top: 0;
+    }
+
 
     /* change background colour */
     .content {
