@@ -17,23 +17,24 @@
 <body>
 
     <div class="container">
-        <header class="navdiv">
+        <header class="navdiv" role="banner">
             <!-- nav logo -->
             <div class="logo-container">
-                <a href="index.html">
+                <a href="index.html" aria-label="Home">
                     <img src='images/logo.png' alt="logo" class="logo" />
                 </a>
             </div>
 
             <!-- word items nav -->
-            <ul>
-                <li class="not-burger"><a href="index.html">Home</a></li>
-                <li class="not-burger"><a href="product.html">Product</a></li>
-                <li class="not-burger"><a href="#faq">Faq</a></li>
-                <li class="not-burger"><a href="contact.html">Contact</a></li>
-                <li class="burger"><a href="#burger">&#9776;</a></li>
-            </ul>
-
+            <nav role="navigation">
+                <ul>
+                    <li class="not-burger"><a href="index.html" aria-label="Home">Home</a></li>
+                    <li class="not-burger"><a href="product.html" aria-label="Product">Product</a></li>
+                    <li class="not-burger"><a href="#faq" aria-label="Frequently Asked Questions">Faq</a></li>
+                    <li class="not-burger"><a href="contact.html" aria-label="Contact">Contact</a></li>
+                    <li class="burger"><a href="#burger" aria-label="Toggle Menu">&#9776;</a></li>
+                </ul>
+            </nav>
         </header>
 
         <div class="contact-title">
@@ -42,65 +43,54 @@
             <hr>
         </div>
 
-
         <!-- cards sections -->
         <div class="product-cards">
-        <!-- Card 1 -->
-        <div class="product-card">
-            <h2>Italian Pasta</h2>
-            <p>Indulge in the flavors of Italy with our delicious pasta dishes. Made with fresh ingredients and
-                authentic Italian recipes.</p>
-            <a href="#" class="read-more">Order Now</a>
-        </div>
+            <!-- Card 1 -->
+            <div class="product-card">
+                <h2>Italian Pasta</h2>
+                <p>Indulge in the flavors of Italy with our delicious pasta dishes. Made with fresh ingredients and
+                    authentic Italian recipes.</p>
+                <a href="#" class="read-more" aria-label="Order Italian Pasta Now">Order Now</a>
+            </div>
 
-        <!-- Card 2 -->
-        <div class="product-card">
-            <h2>Sushi Platter</h2>
-            <p>Experience the taste of Japan with our exquisite sushi platter. Handcrafted by our expert chefs using the
-                finest ingredients.</p>
-            <a href="#" class="read-more">Order Now</a>
-        </div>
+            <!-- Card 2 -->
+            <div class="product-card">
+                <h2>Sushi Platter</h2>
+                <p>Experience the taste of Japan with our exquisite sushi platter. Handcrafted by our expert chefs using the
+                    finest ingredients.</p>
+                <a href="#" class="read-more" aria-label="Order Sushi Platter Now">Order Now</a>
+            </div>
 
-        <!-- Card 3 -->
-        <div class="product-card">
-            <h2>Healthy Salads</h2>
-            <p>Stay fit and refreshed with our range of healthy salads. Packed with nutrients and flavor,
-                they're perfect for a light meal.</p>
-            <a href="#" class="read-more">Order Now</a>
+            <!-- Card 3 -->
+            <div class="product-card">
+                <h2>Healthy Salads</h2>
+                <p>Stay fit and refreshed with our range of healthy salads. Packed with nutrients and flavor,
+                    they're perfect for a light meal.</p>
+                <a href="#" class="read-more" aria-label="Order Healthy Salads Now">Order Now</a>
+            </div>
         </div>
     </div>
 
-    </div>
-
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <!-- mobile footer -->
         <div class="mobile-footer" id="mobile-footer">
-            <img src="images/twitter.png" alt="twitter" class="twitter">
-            <img src="images/facebook.png" alt="facebook" class="facebook">
-            <img src="images/linkedin.png" alt="linkedin" class="linkedin">
+            <img src="images/twitter.png" alt="twitter" class="twitter" aria-label="Twitter">
+            <img src="images/facebook.png" alt="facebook" class="facebook" aria-label="Facebook">
+            <img src="images/linkedin.png" alt="linkedin" class="linkedin" aria-label="LinkedIn">
             <p>Just type what's on your mind and we'll</p>
         </div>
 
         <!-- desktop footer -->
-
         <div class="desktop-footer" id="desktop-footer">
-            <img src="images/logo.png" alt="logofooter" class="logofooter">
-
+            <img src="images/logo.png" alt="logofooter" class="logofooter" aria-label="Footer Logo">
             <div class="socials">
-                <img src="images/twitter.png" alt="twitter" class="twitter">
-                <img src="images/facebook.png" alt="facebook" class="facebook">
-                <img src="images/instragram.png" alt="instragram" class="instagram">
+                <img src="images/twitter.png" alt="twitter" class="twitter" aria-label="Twitter">
+                <img src="images/facebook.png" alt="facebook" class="facebook" aria-label="Facebook">
+                <img src="images/instragram.png" alt="instragram" class="instagram" aria-label="Instagram">
             </div>
-
             <p>Copywright 2020 Bella Onojie.com</p>
         </div>
-
-
     </footer>
-
-
-
 </body>
 
 </html>
